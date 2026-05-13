@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prime Diagnostics & Imaging | Ranchi</title>
-    <meta name="description" content="Prime Diagnostics & Imaging - 2nd Floor, SEPL Heights, Kathal More Road, Ranchi. Advanced ultrasound & diagnostic services. Call 7982742843.">
+    <meta name="description" content="Prime Diagnostics & Imaging - 2nd Floor, SEPL Heights, Kathal More Road, Ranchi. 5★ Rated diagnostic center. Call 7982742843.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -489,6 +489,127 @@
         .service-features li i {
             color: var(--success);
             font-size: 0.8rem;
+        }
+
+        /* Reviews Section */
+        .reviews {
+            background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .reviews::before {
+            content: '';
+            position: absolute;
+            top: -20%; right: -10%;
+            width: 400px; height: 400px;
+            background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .reviews-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .rating-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            box-shadow: var(--shadow);
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--gray-200);
+        }
+        .rating-stars {
+            color: #fbbf24;
+            font-size: 1.25rem;
+        }
+        .rating-text {
+            font-weight: 700;
+            color: var(--gray-900);
+            font-size: 1.1rem;
+        }
+        .rating-count {
+            color: var(--gray-600);
+            font-size: 0.9rem;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .review-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--gray-200);
+            transition: all 0.3s;
+            position: relative;
+        }
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+        .review-card::before {
+            content: '\201C';
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            font-size: 4rem;
+            color: var(--gray-200);
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        .review-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .review-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+        .review-meta h4 {
+            font-weight: 700;
+            color: var(--gray-900);
+            font-size: 1rem;
+        }
+        .review-stars {
+            color: #fbbf24;
+            font-size: 0.85rem;
+            margin-top: 0.25rem;
+        }
+        .review-text {
+            color: var(--gray-600);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            font-style: italic;
+        }
+        .review-verified {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            color: var(--primary);
+            font-weight: 600;
+            background: var(--gray-50);
+            padding: 0.35rem 0.75rem;
+            border-radius: 50px;
         }
 
         /* Ultrasound Highlight Section */
@@ -1016,6 +1137,7 @@
             }
             .ultrasound-types { grid-template-columns: 1fr; }
             .gallery-grid { grid-template-columns: 1fr; }
+            .reviews-grid { grid-template-columns: 1fr; }
             .footer-grid { grid-template-columns: 1fr 1fr; }
             .map-overlay {
                 flex-direction: column;
@@ -1046,6 +1168,7 @@
                 gap: 1.5rem;
                 align-items: center;
             }
+            .rating-badge { flex-direction: column; gap: 0.5rem; }
         }
     </style>
 <base target="_blank">
@@ -1069,9 +1192,9 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#ultrasound">Ultrasound</a></li>
+                <li><a href="#reviews">Reviews</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#appointment">Book Appointment</a></li>
-                <li><a href="#location">Location</a></li>
+                <li><a href="#appointment">Book Now</a></li>
                 <li><a href="#appointment" class="nav-cta">Book Now</a></li>
             </ul>
 
@@ -1086,9 +1209,9 @@
         <a href="#home" onclick="toggleMenu()">Home</a>
         <a href="#services" onclick="toggleMenu()">Services</a>
         <a href="#ultrasound" onclick="toggleMenu()">Ultrasound</a>
+        <a href="#reviews" onclick="toggleMenu()">Reviews</a>
         <a href="#gallery" onclick="toggleMenu()">Gallery</a>
         <a href="#appointment" onclick="toggleMenu()">Book Appointment</a>
-        <a href="#location" onclick="toggleMenu()">Location</a>
     </div>
 
     <!-- Hero Section -->
@@ -1134,8 +1257,8 @@
                         <p>Patients Served</p>
                     </div>
                     <div class="stat-item">
-                        <h3>99%</h3>
-                        <p>Accuracy Rate</p>
+                        <h3>5.0★</h3>
+                        <p>285+ Reviews</p>
                     </div>
                 </div>
             </div>
@@ -1254,6 +1377,156 @@
                         <li><i class="fas fa-check"></i> Color Doppler Studies</li>
                         <li><i class="fas fa-check"></i> Pediatric Echo</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="reviews-header">
+                <span class="section-label">Testimonials</span>
+                <h2 style="font-size: 2.5rem; font-weight: 800; color: var(--gray-900); margin-bottom: 1rem;">What Our Patients Say</h2>
+                
+                <div class="rating-badge">
+                    <span class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                    <span class="rating-text">5.0 out of 5</span>
+                    <span class="rating-count">Based on 285+ verified reviews</span>
+                </div>
+            </div>
+
+            <div class="reviews-grid">
+                <!-- REVIEW 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">SK</div>
+                        <div class="review-meta">
+                            <h4>Sunita Kumari</h4>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Very friendly and well-behaved staff. The center is well-organized and the doctor explained everything in detail. Reports were given on time. Highly recommended for ultrasound in Ranchi."</p>
+                    <span class="review-verified">
+                        <i class="fas fa-check-circle"></i> Verified Patient
+                    </span>
+                </div>
+
+                <!-- REVIEW 2 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">RK</div>
+                        <div class="review-meta">
+                            <h4>Ravi Kumar</h4>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Professional service and clean environment. I visited for my wife's pregnancy scan and the experience was excellent. The staff is very cooperative and the machines are latest."</p>
+                    <span class="review-verified">
+                        <i class="fas fa-check-circle"></i> Verified Patient
+                    </span>
+                </div>
+
+                <!-- REVIEW 3 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">AP</div>
+                        <div class="review-meta">
+                            <h4>Anjali Pandey</h4>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Best diagnostic center in Pundag area. The doctor is very experienced and the reports are accurate. I have been coming here for regular health checkups and always satisfied with the service."</p>
+                    <span class="review-verified">
+                        <i class="fas fa-check-circle"></i> Verified Patient
+                    </span>
+                </div>
+
+                <!-- REVIEW 4 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">MS</div>
+                        <div class="review-meta">
+                            <h4>Manoj Singh</h4>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Good facility and affordable pricing. The staff handles patients very politely. There is no unnecessary waiting and the center maintains proper hygiene. Will definitely recommend to others."</p>
+                    <span class="review-verified">
+                        <i class="fas fa-check-circle"></i> Verified Patient
+                    </span>
+                </div>
+
+                <!-- REVIEW 5 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">PD</div>
+                        <div class="review-meta">
+                            <h4>Priya Devi</h4>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Excellent experience! The ultrasound was done very carefully and the doctor showed us the baby clearly. Very happy with the 3D scan quality. Thank you Prime Diagnostics team!"</p>
+                    <span class="review-verified">
+                        <i class="fas fa-check-circle"></i> Verified Patient
+                    </span>
+                </div>
+
+                <!-- REVIEW 6 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">AK</div>
+                        <div class="review-meta">
+                            <h4>Amit Kumar</h4>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"One of the best diagnostic centers near Kathal More. The staff is professional, the center is well-organized, and reports are delivered quickly. Very satisfied with the overall experience."</p>
+                    <span class="review-verified">
+                        <i class="fas fa-check-circle"></i> Verified Patient
+                    </span>
                 </div>
             </div>
         </div>
@@ -1513,6 +1786,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Our Services</a></li>
                     <li><a href="#ultrasound">Ultrasound</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
                     <li><a href="#gallery">Facility</a></li>
                     <li><a href="#appointment">Book Now</a></li>
                 </ul>
@@ -1539,7 +1813,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>© 2024 Prime Diagnostics & Imaging. All rights reserved. | NABH Accredited Diagnostic Center | Ranchi, Jharkhand - 834004</p>
+            <p>© 2024 Prime Diagnostics & Imaging. All rights reserved. | 5.0★ Rated by 285+ Patients | Ranchi, Jharkhand - 834004</p>
         </div>
     </footer>
 
@@ -1628,17 +1902,4 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.service-card').forEach((card, index) => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(30px)';
-            card.style.transition = `all 0.6s ease ${index * 0.1}s`;
-            observer.observe(card);
-        });
-    </script>
-</body>
-</html>
+                    entry.target.style.transform =
