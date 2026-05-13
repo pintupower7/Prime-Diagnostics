@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Diagnostics & Imaging | Ranchi</title>
+    <meta name="description" content="Prime Diagnostics & Imaging - 2nd Floor, SEPL Heights, Kathal More Road, Ranchi. Advanced ultrasound & diagnostic services. Call 7982742843.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #059669;
+            --primary-light: #10b981;
+            --primary-dark: #047857;
+            --accent: #14b8a6;
+            --accent-light: #5eead4;
+            --white: #ffffff;
+            --gray-50: #f0fdf4;
+            --gray-100: #ecfdf5;
+            --gray-200: #d1fae5;
+            --gray-600: #475569;
+            --gray-800: #1e293b;
+            --gray-900: #0f172a;
+            --success: #059669;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--gray-800);
+            line-height: 1.6;
+            background: var(--white);
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--gray-200);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.25rem;
+            box-shadow: var(--shadow);
+        }
+
+        .logo-text { display: flex; flex-direction: column; }
+        .logo-title {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--gray-900);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        .logo-subtitle {
+            font-size: 0.7rem;
+            color: var(--primary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            align-items: center;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--gray-600);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+            position: relative;
+        }
+        .nav-links a:hover { color: var(--primary); }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px; left: 0;
+            width: 0; height: 2px;
+            background: var(--primary);
+            transition: width 0.3s;
+        }
+        .nav-links a:hover::after { width: 100%; }
+
+        .nav-cta {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white !important;
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s, box-shadow 0.2s !important;
+        }
+        .nav-cta::after { display: none !important; }
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg) !important;
+            color: white !important;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--gray-800);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 50%, #ccfbf1 100%);
+            position: relative;
+            overflow: hidden;
+            padding-top: 80px;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -10%; right: -5%;
+            width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -10%; left: -5%;
+            width: 400px; height: 400px;
+            background: radial-gradient(circle, rgba(20, 184, 166, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid var(--gray-200);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            backdrop-filter: blur(4px);
+        }
+        .hero-badge i { color: var(--success); }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--gray-900);
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.5rem;
+        }
+        .hero h1 span {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero p {
+            font-size: 1.125rem;
+            color: var(--gray-600);
+            margin-bottom: 2rem;
+            max-width: 90%;
+            line-height: 1.7;
+        }
+
+        .hero-address {
+            display: inline-flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            background: rgba(255,255,255,0.8);
+            padding: 0.75rem 1rem;
+            border-radius: 12px;
+            border: 1px solid var(--gray-200);
+            font-size: 0.9rem;
+            color: var(--gray-600);
+            margin-bottom: 1.5rem;
+            max-width: 90%;
+        }
+        .hero-address i {
+            color: var(--primary);
+            margin-top: 0.2rem;
+        }
+        .hero-address strong {
+            color: var(--gray-800);
+            display: block;
+            font-weight: 600;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            box-shadow: 0 4px 14px rgba(5, 150, 105, 0.3);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(5, 150, 105, 0.4);
+        }
+        .btn-outline {
+            background: white;
+            color: var(--primary);
+            border: 2px solid var(--gray-200);
+        }
+        .btn-outline:hover {
+            border-color: var(--primary);
+            background: var(--gray-50);
+            transform: translateY(-2px);
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 2.5rem;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--gray-200);
+        }
+        .stat-item h3 {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        .stat-item p {
+            font-size: 0.875rem;
+            color: var(--gray-600);
+            margin: 0;
+        }
+
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-image-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+        }
+        .hero-image {
+            width: 100%;
+            height: 450px;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            position: relative;
+        }
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hero-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(5,150,105,0.2), rgba(20,184,166,0.1));
+            border-radius: 24px;
+        }
+
+        .floating-card {
+            position: absolute;
+            background: white;
+            padding: 1rem 1.25rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            animation: float 6s ease-in-out infinite;
+            z-index: 2;
+        }
+        .floating-card.card-1 {
+            top: 10%; left: -10%;
+            animation-delay: 0s;
+        }
+        .floating-card.card-2 {
+            bottom: 15%; right: -10%;
+            animation-delay: 3s;
+        }
+        .floating-card-icon {
+            width: 40px; height: 40px;
+            background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--success);
+            font-size: 1.1rem;
+        }
+        .floating-card-text { display: flex; flex-direction: column; }
+        .floating-card-text strong {
+            font-size: 0.9rem;
+            color: var(--gray-900);
+        }
+        .floating-card-text span {
+            font-size: 0.75rem;
+            color: var(--gray-600);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        /* Section Styles */
+        section { padding: 6rem 2rem; }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 4rem;
+        }
+        .section-label {
+            display: inline-block;
+            background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+            color: var(--primary);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            border: 1px solid #a7f3d0;
+        }
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--gray-900);
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+        .section-header p {
+            color: var(--gray-600);
+            font-size: 1.125rem;
+        }
+
+        /* Services Section */
+        .services { background: var(--white); }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .service-card {
+            background: var(--gray-50);
+            border: 1px solid var(--gray-200);
+            border-radius: 20px;
+            padding: 2.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+            border-color: transparent;
+        }
+        .service-card:hover::before { transform: scaleX(1); }
+
+        .service-icon {
+            width: 60px; height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 8px 16px rgba(5, 150, 105, 0.2);
+        }
+        .service-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 0.75rem;
+        }
+        .service-card p {
+            color: var(--gray-600);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .service-features {
+            list-style: none;
+            margin-top: 1.25rem;
+        }
+        .service-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--gray-600);
+            margin-bottom: 0.5rem;
+        }
+        .service-features li i {
+            color: var(--success);
+            font-size: 0.8rem;
+        }
+
+        /* Ultrasound Highlight Section */
+        .ultrasound-highlight {
+            background: linear-gradient(135deg, var(--gray-900) 0%, #064e3b 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .ultrasound-highlight::before {
+            content: '';
+            position: absolute;
+            top: 0; right: 0;
+            width: 500px; height: 500px;
+            background: radial-gradient(circle, rgba(16, 185, 129, 0.2) 0%, transparent 70%);
+        }
+        .ultrasound-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .ultrasound-content .section-label {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--accent-light);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .ultrasound-content h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+        .ultrasound-content p {
+            color: #a7f3d0;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+        .ultrasound-types {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .ultrasound-type {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .ultrasound-type i {
+            color: var(--accent-light);
+            font-size: 1.2rem;
+        }
+        .ultrasound-type span {
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        .ultrasound-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ultrasound-image {
+            width: 100%;
+            max-width: 450px;
+            height: 400px;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        .ultrasound-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .ultrasound-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(6,78,59,0.6), transparent);
+        }
+
+        /* Appointment Section */
+        .appointment { background: var(--gray-50); }
+        .appointment-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        .appointment-info h3 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 1rem;
+        }
+        .appointment-info p {
+            color: var(--gray-600);
+            margin-bottom: 2rem;
+        }
+        .contact-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .contact-card {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: white;
+            padding: 1.25rem;
+            border-radius: 16px;
+            border: 1px solid var(--gray-200);
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s;
+        }
+        .contact-card:hover {
+            transform: translateX(5px);
+            border-color: var(--primary);
+            box-shadow: var(--shadow);
+        }
+        .contact-card-icon {
+            width: 50px; height: 50px;
+            background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+        .contact-card-text { display: flex; flex-direction: column; }
+        .contact-card-text strong {
+            color: var(--gray-900);
+            font-size: 1rem;
+        }
+        .contact-card-text span {
+            color: var(--gray-600);
+            font-size: 0.875rem;
+        }
+
+        /* Form Styles */
+        .form-container {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 24px;
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--gray-200);
+        }
+        .form-container h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 0.5rem;
+        }
+        .form-container > p {
+            color: var(--gray-600);
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--gray-800);
+            margin-bottom: 0.5rem;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            border: 2px solid var(--gray-200);
+            border-radius: 12px;
+            font-family: inherit;
+            font-size: 1rem;
+            color: var(--gray-800);
+            transition: all 0.2s;
+            background: var(--gray-50);
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: white;
+            box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.1);
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            background: white;
+            padding: 4rem 2rem;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .gallery-item {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s;
+            position: relative;
+            height: 280px;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            padding: 1.5rem;
+            color: white;
+        }
+        .gallery-overlay h4 {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        .gallery-overlay p {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        /* Map Section */
+        .map-section { padding: 0; background: var(--white); }
+        .map-container {
+            position: relative;
+            width: 100%;
+            height: 450px;
+            background: var(--gray-100);
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            filter: grayscale(20%) contrast(1.1);
+        }
+        .map-overlay {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            padding: 1.5rem 2rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow-xl);
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            max-width: 90%;
+            width: auto;
+        }
+        .map-overlay-icon {
+            width: 50px; height: 50px;
+            background: linear-gradient(135deg, #fee2e2, #fecaca);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #dc2626;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+        .map-overlay-text h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 0.25rem;
+        }
+        .map-overlay-text p {
+            color: var(--gray-600);
+            font-size: 0.9rem;
+        }
+
+        /* Floating Buttons */
+        .floating-actions {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            z-index: 999;
+        }
+        .fab {
+            width: 60px; height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+            position: relative;
+        }
+        .fab:hover {
+            transform: scale(1.1) translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        .fab-call {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+        }
+        .fab-whatsapp {
+            background: linear-gradient(135deg, #25d366, #128c7e);
+        }
+        .fab-tooltip {
+            position: absolute;
+            right: 70px;
+            background: var(--gray-900);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s;
+        }
+        .fab:hover .fab-tooltip {
+            opacity: 1;
+            visibility: visible;
+            right: 75px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--gray-900);
+            color: white;
+            padding: 4rem 2rem 2rem;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-brand .logo-title {
+            color: white;
+            font-size: 1.5rem;
+        }
+        .footer-brand .logo-subtitle {
+            color: var(--accent-light);
+        }
+        .footer-brand p {
+            color: #94a3b8;
+            margin-top: 1rem;
+            line-height: 1.7;
+        }
+        .footer-col h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+        .footer-col ul { list-style: none; }
+        .footer-col ul li { margin-bottom: 0.75rem; }
+        .footer-col ul li a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.2s;
+            font-size: 0.95rem;
+        }
+        .footer-col ul li a:hover { color: var(--accent-light); }
+
+        .footer-address {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-top: 1rem;
+            color: #94a3b8;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        .footer-address i {
+            color: var(--accent-light);
+            margin-top: 0.25rem;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 3rem auto 0;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+            text-align: center;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 80px;
+            left: 0; right: 0;
+            background: white;
+            padding: 2rem;
+            box-shadow: var(--shadow-xl);
+            z-index: 999;
+            border-bottom: 1px solid var(--gray-200);
+        }
+        .mobile-menu.active { display: block; }
+        .mobile-menu a {
+            display: block;
+            padding: 1rem;
+            color: var(--gray-800);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid var(--gray-100);
+        }
+        .mobile-menu a:last-child {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            text-align: center;
+            border-radius: 12px;
+            margin-top: 1rem;
+            border: none;
+        }
+
+        /* Toast Notification */
+        .toast {
+            position: fixed;
+            top: 100px;
+            right: 2rem;
+            background: white;
+            padding: 1.25rem 1.5rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow-xl);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            z-index: 10000;
+            transform: translateX(150%);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border-left: 4px solid var(--success);
+            max-width: 400px;
+        }
+        .toast.show { transform: translateX(0); }
+        .toast-icon {
+            width: 40px; height: 40px;
+            background: #ecfdf5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--success);
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+        .toast-content h4 {
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 0.25rem;
+        }
+        .toast-content p {
+            color: var(--gray-600);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .nav-links { display: none; }
+            .mobile-menu-btn { display: block; }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 3rem;
+            }
+            .hero h1 { font-size: 2.5rem; }
+            .hero p { max-width: 100%; }
+            .hero-stats { justify-content: center; }
+            .hero-visual { order: -1; }
+            .floating-card { display: none; }
+            .hero-address { margin: 0 auto 1.5rem; text-align: left; }
+
+            .ultrasound-grid,
+            .appointment-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .ultrasound-types { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .map-overlay {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+                padding: 1.25rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero h1 { font-size: 2rem; }
+            .section-header h2 { font-size: 1.75rem; }
+            .hero-buttons { flex-direction: column; align-items: center; }
+            .btn { width: 100%; justify-content: center; }
+            .form-row { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .floating-actions {
+                bottom: 1rem;
+                right: 1rem;
+            }
+            .fab {
+                width: 50px;
+                height: 50px;
+                font-size: 1.25rem;
+            }
+            .hero-stats {
+                flex-direction: column;
+                gap: 1.5rem;
+                align-items: center;
+            }
+        }
+    </style>
+<base target="_blank">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-heart-pulse"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">Prime Diagnostics</span>
+                    <span class="logo-subtitle">& Imaging Center</span>
+                </div>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#ultrasound">Ultrasound</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#appointment">Book Appointment</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#appointment" class="nav-cta">Book Now</a></li>
+            </ul>
+
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" onclick="toggleMenu()">Home</a>
+        <a href="#services" onclick="toggleMenu()">Services</a>
+        <a href="#ultrasound" onclick="toggleMenu()">Ultrasound</a>
+        <a href="#gallery" onclick="toggleMenu()">Gallery</a>
+        <a href="#appointment" onclick="toggleMenu()">Book Appointment</a>
+        <a href="#location" onclick="toggleMenu()">Location</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-check-circle"></i>
+                    Trusted Diagnostic Center in Ranchi
+                </div>
+                <h1>Advanced Diagnostics <span>You Can Trust</span></h1>
+                
+                <div class="hero-address">
+                    <i class="fas fa-location-dot"></i>
+                    <div>
+                        <strong>Prime Diagnostics & Imaging</strong>
+                        2nd Floor, SEPL Heights, Kathal More Road,<br>
+                        Opp. RKDF University, Pundag, Ranchi,<br>
+                        Jharkhand — <strong>834004</strong>
+                    </div>
+                </div>
+
+                <p>Experience precision healthcare with state-of-the-art imaging technology, expert radiologists, and compassionate care — all under one roof at Prime Diagnostics & Imaging.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#appointment" class="btn btn-primary">
+                        <i class="fas fa-calendar-check"></i>
+                        Book Appointment
+                    </a>
+                    <a href="tel:7982742843" class="btn btn-outline">
+                        <i class="fas fa-phone"></i>
+                        Call 7982742843
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>15+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50K+</h3>
+                        <p>Patients Served</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>99%</h3>
+                        <p>Accuracy Rate</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image">
+                        <img src="https://kimi-web-img.moonshot.cn/img/joeris.com/5d901827c4f0b8a3239e25e056b8801a37108ca2.jpg" alt="Prime Diagnostics Center Interior">
+                    </div>
+                    <div class="floating-card card-1">
+                        <div class="floating-card-icon">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <div class="floating-card-text">
+                            <strong>Safe & Sterile</strong>
+                            <span>100% Hygiene Protocol</span>
+                        </div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <div class="floating-card-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="floating-card-text">
+                            <strong>Quick Reports</strong>
+                            <span>Within 24 Hours</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Services</span>
+                <h2>Comprehensive Diagnostic Solutions</h2>
+                <p>We offer a full spectrum of diagnostic services using cutting-edge technology to ensure accurate and timely results for better health outcomes.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>Obstetric Ultrasound</h3>
+                    <p>Comprehensive pregnancy scans including NT scan, anomaly scan, growth scan, and doppler studies with detailed fetal assessment.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> 3D/4D Imaging Available</li>
+                        <li><i class="fas fa-check"></i> Fetal Echo & NT Scans</li>
+                        <li><i class="fas fa-check"></i> Biophysical Profile</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-stomach"></i>
+                    </div>
+                    <h3>Abdominal Ultrasound</h3>
+                    <p>Detailed imaging of liver, gallbladder, kidneys, pancreas, and spleen to detect stones, tumors, and organ abnormalities.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Upper & Lower Abdomen</li>
+                        <li><i class="fas fa-check"></i> KUB & Pelvic Scans</li>
+                        <li><i class="fas fa-check"></i> Prostate & Scrotal USG</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-venus"></i>
+                    </div>
+                    <h3>Gynecological Scan</h3>
+                    <p>Specialized scans for ovarian cysts, fibroids, PCOS, endometrial thickness, and fertility assessment with complete confidentiality.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> TVS & Transabdominal</li>
+                        <li><i class="fas fa-check"></i> Follicular Monitoring</li>
+                        <li><i class="fas fa-check"></i> Hysterosonography</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Neurosonography</h3>
+                    <p>Advanced cranial ultrasound for neonates and infants to assess brain structure, ventricles, and detect congenital anomalies.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Through Anterior Fontanelle</li>
+                        <li><i class="fas fa-check"></i> Doppler Studies</li>
+                        <li><i class="fas fa-check"></i> Neurodevelopmental Tracking</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bone"></i>
+                    </div>
+                    <h3>Musculoskeletal USG</h3>
+                    <p>High-resolution imaging for joint effusions, tendon tears, ligament injuries, and soft tissue masses with dynamic assessment.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Shoulder & Knee Joints</li>
+                        <li><i class="fas fa-check"></i> Tendon & Ligament Scans</li>
+                        <li><i class="fas fa-check"></i> Guided Injections</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heart-pulse"></i>
+                    </div>
+                    <h3>Echocardiography</h3>
+                    <p>Complete cardiac evaluation including 2D Echo, Color Doppler, TTE, and stress echo for comprehensive heart health assessment.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> 2D & 3D Echocardiography</li>
+                        <li><i class="fas fa-check"></i> Color Doppler Studies</li>
+                        <li><i class="fas fa-check"></i> Pediatric Echo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ultrasound Highlight Section -->
+    <section class="ultrasound-highlight" id="ultrasound">
+        <div class="container">
+            <div class="ultrasound-grid">
+                <div class="ultrasound-content">
+                    <span class="section-label">Specialized Care</span>
+                    <h2>Advanced Ultrasound Imaging</h2>
+                    <p>Our ultrasound department is equipped with the latest high-frequency transducers and advanced imaging software, delivering crystal-clear diagnostic images with exceptional detail and accuracy.</p>
+                    
+                    <div class="ultrasound-types">
+                        <div class="ultrasound-type">
+                            <i class="fas fa-wave-square"></i>
+                            <span>2D/3D/4D Imaging</span>
+                        </div>
+                        <div class="ultrasound-type">
+                            <i class="fas fa-tachograph-digital"></i>
+                            <span>Color Doppler</span>
+                        </div>
+                        <div class="ultrasound-type">
+                            <i class="fas fa-heart-circle-bolt"></i>
+                            <span>Elastography</span>
+                        </div>
+                        <div class="ultrasound-type">
+                            <i class="fas fa-baby-carriage"></i>
+                            <span>Fetal Medicine</span>
+                        </div>
+                        <div class="ultrasound-type">
+                            <i class="fas fa-syringe"></i>
+                            <span>USG Guided Procedures</span>
+                        </div>
+                        <div class="ultrasound-type">
+                            <i class="fas fa-ribbon"></i>
+                            <span>Breast Sonography</span>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <a href="#appointment" class="btn btn-primary">
+                            <i class="fas fa-calendar-check"></i>
+                            Schedule Ultrasound
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="ultrasound-visual">
+                    <div class="ultrasound-image">
+                        <img src="https://kimi-web-img.moonshot.cn/img/www.allstatesmed.com/0ddeddf6216bde56f3cdcba20a20e8a387e43249.jpg" alt="Advanced Ultrasound Machine">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container" style="margin-bottom: 3rem;">
+            <div class="section-header">
+                <span class="section-label">Our Facility</span>
+                <h2>State-of-the-Art Infrastructure</h2>
+                <p>Take a look at our modern diagnostic center equipped with the latest medical technology and comfortable patient areas.</p>
+            </div>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://kimi-web-img.moonshot.cn/img/thumbs.dreamstime.com/4e5e3bd0666920be622a2144e429802762f3ff00.jpg" alt="Modern Medical Laboratory">
+                <div class="gallery-overlay">
+                    <h4>Advanced Laboratory</h4>
+                    <p>High-tech diagnostic machinery</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://kimi-web-img.moonshot.cn/img/www.interioracebd.com/5b01c4a8436ac91e1078353fb7a6c304e0c05976.jpg" alt="Diagnostic Reception">
+                <div class="gallery-overlay">
+                    <h4>Patient Reception</h4>
+                    <p>Comfortable waiting area</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://kimi-web-img.moonshot.cn/img/thumbs.dreamstime.com/7dcc11c0eb9a9240e535fa88cd475b9cff89cbcc.jpg" alt="Diagnostic Equipment">
+                <div class="gallery-overlay">
+                    <h4>Precision Equipment</h4>
+                    <p>Accurate results guaranteed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="appointment" id="appointment">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Book Now</span>
+                <h2>Schedule Your Appointment</h2>
+                <p>Book your diagnostic appointment in seconds. Our team will confirm your slot and prepare everything for a seamless experience.</p>
+            </div>
+
+            <div class="appointment-grid">
+                <div class="appointment-info">
+                    <h3>Why Book With Us?</h3>
+                    <p>Skip the waiting lines and secure your preferred time slot. We ensure minimal wait times, sanitized environments, and personalized attention for every patient.</p>
+                    
+                    <div class="contact-cards">
+                        <a href="tel:7982742843" class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-card-text">
+                                <strong>Call Directly</strong>
+                                <span>7982742843</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://wa.me/917982742843" target="_blank" class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-card-text">
+                                <strong>WhatsApp Booking</strong>
+                                <span>Quick & Convenient</span>
+                            </div>
+                        </a>
+                        
+                        <div class="contact-card" style="cursor: default;">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-location-dot"></i>
+                            </div>
+                            <div class="contact-card-text">
+                                <strong>Visit Us</strong>
+                                <span>2nd Floor, SEPL Heights, Kathal More Rd, Pundag, Ranchi - 834004</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-card" style="cursor: default;">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-card-text">
+                                <strong>Working Hours</strong>
+                                <span>Mon - Sat: 8:00 AM - 8:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <h3>Request Appointment</h3>
+                    <p>Fill in your details and we'll get back to you within 30 minutes.</p>
+                    
+                    <form id="bookingForm" onsubmit="handleSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="7982742843" pattern="[0-9]{10}" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service">Select Service</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Choose a service...</option>
+                                    <option value="obstetric">Obstetric / Pregnancy Scan</option>
+                                    <option value="abdominal">Abdominal Ultrasound</option>
+                                    <option value="gynecological">Gynecological Scan</option>
+                                    <option value="neurosonography">Neurosonography</option>
+                                    <option value="musculoskeletal">Musculoskeletal USG</option>
+                                    <option value="echocardiography">Echocardiography</option>
+                                    <option value="other">Other / General Consultation</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Preferred Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Additional Notes (Optional)</label>
+                            <textarea id="notes" name="notes" placeholder="Any specific requirements or symptoms you'd like us to know..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Confirm Booking Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" id="location">
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.660688678456!2d85.3828!3d23.3990!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDIzJzU2LjQiTiA4NcKwMjInNTguMSJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            
+            <div class="map-overlay">
+                <div class="map-overlay-icon">
+                    <i class="fas fa-location-dot"></i>
+                </div>
+                <div class="map-overlay-text">
+                    <h4>Prime Diagnostics & Imaging</h4>
+                    <p>2nd Floor, SEPL Heights, Kathal More Road, Opp. RKDF University, Pundag, Ranchi, Jharkhand — 834004</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo-text" style="margin-bottom: 0.5rem;">
+                    <span class="logo-title">Prime Diagnostics</span>
+                    <span class="logo-subtitle">& Imaging Center</span>
+                </div>
+                <p>Delivering excellence in diagnostic imaging with cutting-edge technology, experienced radiologists, and patient-centered care since 2009.</p>
+                
+                <div class="footer-address">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        2nd Floor, SEPL Heights,<br>
+                        Kathal More Road, Opp. RKDF University,<br>
+                        Pundag, Ranchi, Jharkhand — 834004
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#ultrasound">Ultrasound</a></li>
+                    <li><a href="#gallery">Facility</a></li>
+                    <li><a href="#appointment">Book Now</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">Obstetric Scan</a></li>
+                    <li><a href="#services">Abdominal USG</a></li>
+                    <li><a href="#services">Cardiac Echo</a></li>
+                    <li><a href="#services">Neurosonography</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:7982742843"><i class="fas fa-phone" style="margin-right: 0.5rem;"></i>7982742843</a></li>
+                    <li><a href="https://wa.me/917982742843"><i class="fab fa-whatsapp" style="margin-right: 0.5rem;"></i>WhatsApp Us</a></li>
+                    <li><a href="#location"><i class="fas fa-location-dot" style="margin-right: 0.5rem;"></i>Ranchi, Jharkhand</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2024 Prime Diagnostics & Imaging. All rights reserved. | NABH Accredited Diagnostic Center | Ranchi, Jharkhand - 834004</p>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <a href="tel:7982742843" class="fab fab-call">
+            <i class="fas fa-phone"></i>
+            <span class="fab-tooltip">Call Now</span>
+        </a>
+        <a href="https://wa.me/917982742843" target="_blank" class="fab fab-whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="fab-tooltip">WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-icon">
+            <i class="fas fa-check"></i>
+        </div>
+        <div class="toast-content">
+            <h4>Booking Request Received!</h4>
+            <p>Our team will contact you shortly to confirm your appointment.</p>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.08)';
+            } else {
+                navbar.style.boxShadow = 'none';
+            }
+        });
+
+        // Form Submission Handler
+        function handleSubmit(e) {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData);
+            
+            const toast = document.getElementById('toast');
+            toast.classList.add('show');
+            
+            e.target.reset();
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 4000);
+            
+            console.log('Booking Request:', data);
+        }
+
+        // Set minimum date to today
+        document.getElementById('date').min = new Date().toISOString().split('T')[0];
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card').forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = `all 0.6s ease ${index * 0.1}s`;
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
